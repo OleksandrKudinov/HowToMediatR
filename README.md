@@ -1,4 +1,4 @@
-### MediatR: Your Code’s Friendly Messenger
+# MediatR: Your Code’s Friendly Messenger
 
 In today’s fast-paced development world, keeping your code neat and loosely connected is essential.
 Imagine a world where every component of your application communicates through a single, powerful hub - no more complicated dependencies or hidden coupling.
