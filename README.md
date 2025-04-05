@@ -25,7 +25,7 @@ So let's see how these communication types - query, command, and notification - 
 From MediatR’s perspective, both Queries and Commands can use the same interface, `IRequest`.
 In general, the difference is that a Query is responsible only for retrieving data, while a Command represents a strong intention to perform an action, like creating or modifying data.
 
-With MediatR, you decide whether an `IRequest` handler will handle a query or a command.
+With MediatR, you decide whether an `IRequestHandler` will handle a query or a command.
 I’ll show you only a Query example, just to keep this article short.
 
 ---
