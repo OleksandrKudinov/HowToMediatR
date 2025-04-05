@@ -84,8 +84,8 @@ public sealed class WhatIsYourFavoriteDrinkQueryHandler : IRequestHandler<WhatIs
     }
 
     private readonly CustomService _service;
-}```
-
+}
+```
 
 To "ask the question", you simply create and send the query via the mediator:
 
