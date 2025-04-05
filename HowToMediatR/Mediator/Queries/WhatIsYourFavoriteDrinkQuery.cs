@@ -1,4 +1,8 @@
-﻿using MediatR;
+﻿using HowToMediatR.Models;
+using MediatR;
+
+namespace HowToMediatR.Mediator.Queries;
+
 
 // 'Query' postfix just to highlight our intention to use this IRequest implementation as a Query. 
 public sealed class WhatIsYourFavoriteDrinkQuery : IRequest<Drink>

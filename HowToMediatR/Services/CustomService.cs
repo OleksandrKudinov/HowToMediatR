@@ -1,4 +1,6 @@
-﻿namespace HowToMediatR.Services;
+﻿using HowToMediatR.Models;
+
+namespace HowToMediatR.Services;
 
 public sealed class CustomService
 {

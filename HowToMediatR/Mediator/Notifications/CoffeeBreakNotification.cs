@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using HowToMediatR.Models;
+using MediatR;
 
 namespace HowToMediatR.Mediator.Notifications;
 

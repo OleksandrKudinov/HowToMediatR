@@ -1,7 +1,9 @@
-﻿using HowToMediatR.Services;
+﻿using HowToMediatR.Mediator.Queries;
+using HowToMediatR.Models;
+using HowToMediatR.Services;
 using MediatR;
 
-namespace HowToMediatR.Mediator.Handlers;
+namespace HowToMediatR.Mediator.QueryHandlers;
 
 public sealed class WhatIsYourFavoriteDrinkQueryHandler : IRequestHandler<WhatIsYourFavoriteDrinkQuery, Drink>
 {

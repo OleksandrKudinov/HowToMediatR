@@ -1,11 +1,13 @@
 ﻿using HowToMediatR.Mediator.Notifications;
+using HowToMediatR.Mediator.Queries;
+using HowToMediatR.Models;
 using HowToMediatR.Services;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace HowToMediatR;
 
-internal class Program
+internal static class Program
 {
     static async Task Main(string[] args)
     {

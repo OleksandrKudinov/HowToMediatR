@@ -4,6 +4,9 @@ In today’s fast-paced development world, keeping your code neat and loosely co
 Imagine a world where every component of your application communicates through a single, powerful hub - no more complicated dependencies or hidden coupling.
 That’s where MediatR comes in.
 
+![image](https://github.com/user-attachments/assets/0a2dbb73-5a75-4e50-9029-01a1de6a263d)
+
+
 MediatR - a .NET library built on the mediator pattern, acting like an easy-to-use hub that manages communication between different parts of your app. With MediatR, your code stays clean, making it easier to tweak, test, and grow over time.
 
 ## What Is the Mediator Pattern?
