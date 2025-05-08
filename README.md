@@ -30,6 +30,7 @@ Notification and request handlers are also straightforward: You have to implemen
 Seems quite easy, isn’t it? But enough talks about theory, let’s go and try it!
 We will create one request and one notification example, here is a sequence diagram of how it works under the hood with MediatR:
 ![image](https://github.com/user-attachments/assets/4cb3ba6f-ef87-45ed-ae2c-b202837f8645)
+
 ---
 
 ## Request example: "What's your favorite drink?"
