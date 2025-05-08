@@ -34,6 +34,10 @@ Seems quite easy, isn’t it? But enough talks about theory, let’s go and try 
 ## Querying example: "What's your favorite drink?"
 
 Let’s see how this works with a simple example. 
+
+Here is a sequence diagram of how it works under the hood:
+![image](https://github.com/user-attachments/assets/3435646d-c7eb-468c-8c12-24d357839fcf)
+
 First, let's define some typical components: a data model for the drink with a Drink Service itself
 
 ```c#
@@ -57,9 +61,6 @@ public sealed class DrinkService
 ```
 
 Now it's time to use this stuff with MediatR.
-
-Here is a sequence diagram of how it works under the hood:
-![image](https://github.com/user-attachments/assets/3435646d-c7eb-468c-8c12-24d357839fcf)
 
 First, we create a query that asks: "What is your favorite drink?". This request returns a `Drink` object:
 
