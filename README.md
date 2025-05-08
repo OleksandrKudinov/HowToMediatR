@@ -27,7 +27,9 @@ So let's see how these communication types – notifications and requests are im
 Well, it’s pretty simple: for Notifications there is `INotification` interface. All you need - just implement it with your own class. Same goes with Requests – MediatR has `IRequest` interface for that.  
 
 Notification and request handlers are also straightforward: You have to implement `INotificationHandler` to handle notifications and `IRequestHandler` to be able to handle specific request. 
-Seems quite easy, isn’t it? But enough talks about theory, let’s go and try it!
+Seems quite easy, isn’t it? 
+
+But enough talks about theory, let’s go and try it!
 We will create one request and one notification example, here is a sequence diagram of how it works under the hood with MediatR:
 ![image](https://github.com/user-attachments/assets/4cb3ba6f-ef87-45ed-ae2c-b202837f8645)
 
