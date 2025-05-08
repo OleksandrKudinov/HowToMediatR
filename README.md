@@ -31,7 +31,7 @@ Seems quite easy, isn’t it? But enough talks about theory, let’s go and try 
 
 ---
 
-## Querying example: "What's your favorite drink?"
+## Request example: "What's your favorite drink?"
 
 Let’s see how this works with a simple example. 
 
