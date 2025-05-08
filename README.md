@@ -42,7 +42,7 @@ public sealed class Drink
     public required string Name { get; init; }
 }
 
-public sealed class CustomService
+public sealed class DrinkService
 {
     public async Task<Drink> GetMyFavoriteDrink()
     {
@@ -57,6 +57,10 @@ public sealed class CustomService
 ```
 
 Now it's time to use this stuff with MediatR.
+
+Here is a sequence diagram of how it works under the hood:
+![image](https://github.com/user-attachments/assets/3435646d-c7eb-468c-8c12-24d357839fcf)
+
 First, we create a query that asks: "What is your favorite drink?". This request returns a `Drink` object:
 
 ```c#
@@ -84,7 +88,7 @@ public sealed class WhatIsYourFavoriteDrinkQueryHandler : IRequestHandler<WhatIs
         _service = service;
     }
 
-    private readonly CustomService _service;
+    private readonly DrinkService _service;
 }
 ```
 
@@ -158,7 +162,7 @@ Let’s make the configuration as simple as possible:
 var services = new ServiceCollection();
 
 // don’t forget about our custom service used by WhatIsYourFavoriteDrinkQueryHandler
-services.AddSingleton<CustomService>();
+services.AddSingleton<DrinkService>();
 
 // Register all MediatR-related classes from the current assembly
 services.AddMediatR(configuration => configuration.RegisterServicesFromAssembly(typeof(Program).Assembly));
@@ -179,7 +183,7 @@ MediatR is a versatile tool that can greatly simplify your application's archite
 
 So next time you're building something and want your components to stay focused and independent - let MediatR do the talking.
 
-## ⚠️ Note on Licensing
+## Note on Licensing
 
 As of version **13.0**, **MediatR is no longer fully open-source**. It has transitioned to a **commercial license** under the [Polyform Noncommercial License](https://polyformproject.org/licenses/noncommercial/1.0.0/).
 
