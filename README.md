@@ -36,7 +36,8 @@ Seems quite easy, isn’t it? But enough talks about theory, let’s go and try 
 Let’s see how this works with a simple example. 
 
 Here is a sequence diagram of how it works under the hood:
-![image](https://github.com/user-attachments/assets/3435646d-c7eb-468c-8c12-24d357839fcf)
+![image](https://github.com/user-attachments/assets/4cb3ba6f-ef87-45ed-ae2c-b202837f8645)
+
 
 First, let's define some typical components: a data model for the drink with a Drink Service itself
 
